@@ -1,2 +1,6 @@
-bin
 Makefile
+cmake/
+install_manifest.txt
+*.a
+install/
+sandbox
