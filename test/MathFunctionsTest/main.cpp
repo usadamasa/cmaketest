@@ -3,7 +3,7 @@
 //
 #include <gtest/gtest.h>
 
-#include "MathFunctions/Sqrt.h"
+#include "sandbox/MathFunctions/Sqrt.h"
 
 TEST(SqrtTest, _25_to_5){
     ASSERT_EQ(5.0, sandbox::Sqrt(25).GetSqrt());

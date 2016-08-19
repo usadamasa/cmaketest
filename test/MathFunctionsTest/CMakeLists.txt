@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 set(PRODUCT_SOURCE
-    ${PROJECT_SOURCE_DIR}/src/MathFunctions/Sqrt.cpp
+    ${CMAKE_SOURCE_DIR}/src/sandbox/MathFunctions/Sqrt.cpp
 )
 
 add_executable(
