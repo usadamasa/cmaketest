@@ -8,11 +8,11 @@ set(CMAKE_CXX_FLAGS_DEBUG
     "-g"
 )
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG
-    ${CMAKE_SOURCE_DIR}/bin/debug
-)
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Release" CACHE STRING
+       "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
+endif(NOT CMAKE_BUILD_TYPE)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE
-    ${CMAKE_SOURCE_DIR}/bin/release
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
+    ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE}
 )
-
