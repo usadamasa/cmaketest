@@ -9,6 +9,7 @@ add_subdirectory (
 add_test(
     NAME awesome
     COMMAND $<TARGET_FILE:awesome-test>
+    "--gtest_output=xml:${CMAKE_SOURCE_DIR}/test_detail_${CMAKE_BUILD_TYPE}.xml"
 )
 
 # run with: ctest -L lib
