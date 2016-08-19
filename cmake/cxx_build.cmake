@@ -1,0 +1,18 @@
+set(CMAKE_CXX_FLAGS
+    "-std=c++11"
+)
+set(CMAKE_CXX_FLAGS_RELEASE
+    "-Wall -O2"
+)
+set(CMAKE_CXX_FLAGS_DEBUG
+    "-g"
+)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG
+    ${CMAKE_SOURCE_DIR}/bin/debug
+)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE
+    ${CMAKE_SOURCE_DIR}/bin/release
+)
+

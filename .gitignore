@@ -1,7 +1,6 @@
 bin
 build
 Makefile
-cmake/
 install_manifest.txt
 *.a
 install/
