@@ -1,6 +1,11 @@
+build
 Makefile
 cmake/
 install_manifest.txt
 *.a
 install/
 sandbox
+externals
+CTestTestfile.cmake
+Testing
+lib
